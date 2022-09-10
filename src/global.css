@@ -1,0 +1,129 @@
+:root {
+  --bg-color: #4C3A51;
+  --text-color: #4C3A51;
+  --primary-color: #B25068;
+  --secondary-color: #E7AB79;
+  --margin: 30px;
+  --margin-sm: 12px;
+  --font-size: 17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato';
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  font-size: var(--font-size);
+}
+
+main {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header.main {
+  padding: var(--margin-sm) 0;
+  position: relative;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header.main label {
+  font-size: 28px;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  line-height: 1em;
+}
+
+header.main button {
+  margin-left: auto;
+  justify-self: center;
+  align-self: center;
+  background: none;
+  border: 0;
+  color: #FFF;
+  font-weight: bold;
+  font-size: var(--font-size);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+header.main button span {
+  background: var(--primary-color);
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+header.main button:hover {
+  opacity: .8;
+}
+
+.stories {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.stories h3 {
+  font-size: 16px;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.stories p {
+  color: var(--text-color);
+}
+
+.stories a {
+  color: var(--text-color);
+}
+
+.stories li {
+  padding: var(--margin-sm);
+  background: #FFF;
+  border-radius: 12px;
+  margin-bottom: var(--margin-sm);
+  border: 5px solid #FFF;
+}
+
+.stories li.sel {
+  border-color: var(--secondary-color);
+}
+
+.stories footer {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.stories footer a {
+  display: block;
+  margin: 0 var(--margin-sm);
+}
+
+.stories footer button {
+  font-size: 17px;
+  line-height: 1em;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
